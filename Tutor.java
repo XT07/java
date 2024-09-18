@@ -30,13 +30,15 @@ public class Tutor{
         this.amountAnimal = this.amountAnimal + 1;
     }
 
-    public void createPet(Integer id){
+    public void createPet(Integer id, String name, Integer weight, String race){
         Pet pet = new Pet();
         addAmountAnimal();
-        pet.fixId();
-        
-
-
+        pet.fixId(id);
+        pet.changeName(name);
+        pet.addWeight(weight);
+        pet.addRace(race);
+        pet.addPetInTutor();
+        pet.getIdTutor(this.id);
     }
 
     public void showTutor(){

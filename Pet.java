@@ -5,10 +5,10 @@ public class Pet {
     String race;
     Tutor tutor;
     Integer idTutor;
-    Category idCategory;
+    Integer idCategory;
 
-    public void fixId(){
-        this.id = this.id + 1;
+    public void fixId(Integer id){
+        this.id = id;
     }
 
     public void changeName(String newName){
@@ -31,7 +31,7 @@ public class Pet {
         this.idTutor = id;
     }
 
-    public Integer getCategory(){
-        return idCategory.id;
+    public void getCategory(Integer id){
+        this.idCategory = id;
     }
 }
